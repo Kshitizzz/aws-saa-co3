@@ -2,15 +2,15 @@
 
 ## facts
 
-- rds read replicas needed for read scalability
+- rds read replicas needed for read replication - increase availability & ability to recover from disaster
 - 15 read replicas allowed per az
 - read replicas can be persisted across three azs
 - current az, cross az & cross region az
 - replication is async in nature
-- async meaning eventually reads are consistent across all replicas
+- async meaning reads are EVENTUALLY consistent across all replicas
 - just like how async works (promise and fulfulling kinda)
 - each replica can be promoted to their own DB
-- providing some kind of fault tolerance
+- providing some kind of disaster recovery
 - if original goes down -> another replica takes its place
 
 ## network costs of read replication
