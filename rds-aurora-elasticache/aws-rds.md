@@ -34,7 +34,7 @@
 		○ cross region
 	- like mumbai az fata, its okay -> check if noida az working -> noida az bhi fata, its okay -> check if europe region az working -> wo bhi fata -> chud gye guru!
 	
- ## MAJOR USECASE 
+ ## major usecase 
 	- apps with UNPREDICTABLE WORKLOADS
 	- to scale up and down as per need of the app
 	
