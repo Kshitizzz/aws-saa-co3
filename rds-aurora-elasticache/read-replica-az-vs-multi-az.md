@@ -2,7 +2,7 @@
 
 ## facts
 
-- rds read replicas needed for read replication - increase availability & ability to recover from disaster
+- rds read replicas needed for READ REPLICATION - increase availability & ability to recover from disaster
 - 15 read replicas allowed per az
 - read replicas can be persisted across three azs
 - current az, cross az & cross region az
@@ -51,5 +51,5 @@
 - rds will become multi az
 - snapshot taken of source DB
 - snapshot restored to standby DB in another az
-- SYNC replication enabled between source DB in azA and replica in azB
+- SYNC replication enabled between source DB in azA and snapshotted DB in azB
 - ZERO DOWNTIME -> NO NEED TO STOP THE DB to configure it multi-az

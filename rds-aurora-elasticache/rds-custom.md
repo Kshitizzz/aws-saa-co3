@@ -10,3 +10,4 @@
 - in short
 - rds: entire DB and OS managed bt AWS
 - rds-custom: full admin access to the underlying OS + EC2
+- as of now, rds custom only SUPPORTED BY MS SQL SERVER & ORACLE MANAGED DB ENGINES in aws
