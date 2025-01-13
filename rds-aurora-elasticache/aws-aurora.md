@@ -38,4 +38,3 @@
 - ah yes, wizard shit - self healing via peer-to-peer replication also there
 - 1 out of 6 copies of data gets corrupted, but is magically recovered via self healing
 - WOW!
-
