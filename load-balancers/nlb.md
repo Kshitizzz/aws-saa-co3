@@ -11,4 +11,3 @@
 - IP addresses
 - ALBs too
 - NLB health checks support TCP, HTTP & HTTPS protocols
-
