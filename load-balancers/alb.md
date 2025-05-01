@@ -1,5 +1,13 @@
 # application-load-balancers
 
+## memory-hook
+
+- “ALB is picky with rules, talks HTTP fluently, and always wants a cookie.”
+- Picky with rules: Listener rules by priority
+- HTTP fluently: Layer 7 + content routing
+- Wants a cookie: Stickiness via application cookie
+- DOES NOT SUPPORT ELASTIC IP
+
 ## facts
 
 - handle http/https traffic
@@ -34,5 +42,3 @@
 - true IP inserted in the header X-Forwarded-For
 - true port: X-Forwarded-Port
 - true protocol: X-Forwarded-Proto
-
-
