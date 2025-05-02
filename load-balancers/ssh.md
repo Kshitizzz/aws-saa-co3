@@ -8,7 +8,7 @@
 
 - Runs on TCP Port 22
 
-- 🧠 Think of SSH = Remote Terminal, while TLS = Encrypted Communication Layer
+- Think of SSH = Remote Terminal, while TLS = Encrypted Communication Layer
 
 - AWS context:
 - Use SSH to access EC2 instances (e.g., ssh -i mykey.pem ec2-user@...)
