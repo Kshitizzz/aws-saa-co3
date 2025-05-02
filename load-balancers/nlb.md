@@ -10,6 +10,7 @@
 - "Direct" → Preserves source IP, supports Elastic IPs, passthrough traffic
 - "Sticky by IP" → Supports IP-based stickiness (TCP/TLS only, 1–3600 sec, no cookies)
 - “No cookies, just IP — that’s how NLB sticks to thee.”
+- nlb support all three health checks: tcp, http and https
 
 ## facts
 
