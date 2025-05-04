@@ -1,0 +1,2 @@
+- Expect scenario-based questions with CloudTrail logging, access control, and encryption across services (S3, EBS, etc.).
+- envelope encryption often appears in scenarios 
