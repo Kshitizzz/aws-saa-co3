@@ -1,6 +1,7 @@
 # Amazon CloudWatch
 
 ## Memory Hook
+
 - “CloudWatch = Your Cloud Ka FitBit”
 - “Monitor. Alarm. Visualize. Trigger. All from one place.”
 
