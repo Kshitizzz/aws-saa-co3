@@ -1,6 +1,7 @@
 # AWS MFA (Multi-Factor Authentication)
 
 ## Memory Hook
+
 - "Password is a lock. MFA is a deadbolt."
 - "MFA = Extra padlock on your AWS door."
 
