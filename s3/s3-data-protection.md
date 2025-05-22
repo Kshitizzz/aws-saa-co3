@@ -45,6 +45,14 @@
 
 ---
 
+## S3 Glacier Vault Lock
+
+- Protects a bucket from deletion / overwrites on its objects.
+- Applies lock at a bucket level to define that objects can't be deleted till a set period of time.
+- Can define retention periods
+- This is applied at the **bucket level**, precisely the diff between it and S3 object lock
+- Needed for Write Once, Read Many (WORM) storage model for legal, compliance purpose.
+
 ## ✅ 4. S3 Object Lock
 
 > Protect objects from deletion or overwrites for compliance use cases.
