@@ -1,11 +1,13 @@
 # AWS CloudFront - Core Components Explained
 
 ## Memory Hook
+
 - "Edge = Near the user. Origin = Where truth lives."
 
 ---
 
 ## ✅ Edge Location
+
 - AWS-operated **datacenter close to end users**.
 - Caches and serves content via CloudFront for low latency.
 - Does **not** run compute or store full infrastructure — it’s for caching & TLS termination.
@@ -20,11 +22,13 @@
 ## ✅ CloudFront Origin
 
 ### S3 Origin
+
 - Static files (HTML, CSS, JS, images, etc.) served directly from S3 bucket.
 - Needs **public access** or **OAI/Origin Access Control** for private buckets.
 - Optimized automatically for static file delivery.
 
 ### Custom Origin
+
 - Any HTTP server → EC2 instance, ALB, on-premises server, etc.
 - Must handle **HTTP 200/404/500** codes correctly.
 - Supports:
@@ -33,6 +37,7 @@
   - TLS termination at origin or at CloudFront
 
 ### VPC Origin (Private)
+
 - EC2, ALB, or service inside a VPC (private subnet).
 - Requires:
   - PrivateLink
@@ -41,7 +46,7 @@
 
 ---
 
-## 🔐 S3 Signed URLs
+## 🔐 S3 / CloudFront Signed URLs
 
 - Generate **time-limited** and/or **IP-restricted** access to S3 objects.
 - Common for:
