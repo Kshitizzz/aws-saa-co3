@@ -98,9 +98,9 @@
 ## 🧠 Row-Level Security (Filter Expressions)
 
 - Define filter policy per principal:
-```sql
+```
 customer_id = '${userid}'
-
+```
 Dynamically restrict access at query time
 
 Works in Athena, Redshift Spectrum, and EMR
@@ -125,6 +125,3 @@ Dynamic permissioning across dozens of datasets	✅ LF Tag-Based Access Control 
 
 “Allow read only rows with specific conditions?” → ✅ Row-level security filter
 
-vbnet
-Copy
-Edit
