@@ -15,7 +15,7 @@
 | Attribute               | Description                              |
 |--------------------------|------------------------------------------|
 | **Primary private IP**   | Mandatory; assigned from subnet CIDR     |
-| **Secondary private IPs**| Optional; used for multiple services     |
+| **Secondary private IPs**| Optional; used for multiple services, also manually or dynamically assigned from subnet CIDR|
 | **Elastic IP (EIP)**     | Optional; public IP mapped to private IP |
 | **MAC address**          | Unique per ENI                           |
 | **Security Groups**      | Attached to ENI                          |
