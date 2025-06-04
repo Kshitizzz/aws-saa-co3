@@ -1,6 +1,7 @@
 # EC2 Storage Options – Deep Dive (EBS, EFS, FSx, Instance Store)
 
 ## Memory Hook  
+
 - “EBS = Block for one EC2”  
 - “EFS = Shared file system”  
 - “FSx = Managed enterprise-grade FS”  
@@ -25,6 +26,9 @@
 ### Key Features
 
 - ✅ Snapshots → stored in S3, used for backup, cloning
+- EBS archival snapshots available: 24 - 72 hours restoration time
+- Fast Snapshot Restore available for instantaneous restore but very expensive
+- Recycle bin for available for deleted snapshots with retention period of 1 day to 1 year
 - ✅ Encrypted with KMS (at rest, in-transit)
 - ✅ Supports resizing, changing type, adding IOPS live
 - ✅ Durable: **replicated within an AZ**
@@ -55,7 +59,7 @@
 
 ## ✅ 3. Amazon EFS (Elastic File System)
 
-> Scalable, shared **NFS-based file system** for Linux EC2 instances
+> Scalable, shared **NFS-based file system** for Linux EC2 instances (not for windows EC2 instances)
 
 ### Key Features
 
@@ -70,7 +74,7 @@
 
 - Shared home dirs
 - Lift-and-shift NFS apps
-- HPC apps, CMS
+- HPC apps, CMS (content management systems)
 
 ### Access & Performance Modes
 
