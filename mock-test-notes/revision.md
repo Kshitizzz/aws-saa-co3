@@ -1,0 +1,34 @@
+- aws outposts and EKS anywhere
+- guarduty and inspector
+- Amazon FSx windows server Vs FSx lustre
+- babelfish for Aurora PostgresSQL to work with MS Sql Server T-SQL queries
+- VPC sharing vs VPC peering
+- Cross account access to EFS via resource policies and EFS mount targets and access points
+- AwS storage gateway file gateway with NFS compataible file share
+- ASG behaviours with EC2s in standby mode
+- which EC2 volume types cant be used as boot volume
+	1. throughput optimized volumes st1 
+	2. cold hard disk drive sc1
+- Amazon RDS Multi-AZ follows synchronous replication and spans at least two Availability Zones (AZs) within a single region. Read replicas follow asynchronous replication and can be within an Availability Zone (AZ), Cross-AZ, or Cross-Region
+- FSx for Lustre integrates with Amazon S3, making it easy to process data sets with the Lustre file system. When linked to an S3 bucket, an FSx for Lustre file system transparently presents S3 objects as files and allows you to write changed data back to S3.
+- FSx for Lustre provides the ability to both process the 'hot data' in a parallel and distributed fashion as well as easily store the 'cold data' on Amazon S3. 
+- Glue DataBrew, Glue Studio Visual Canvas
+- AWS AppFlow
+-  FIFO queues support up to 300 messages per second (300 send, receive, or delete operations per second). When you batch 10 messages per operation (maximum), FIFO queues can support up to 3,000 messages per second.
+- Use Amazon Comprehend for custom entity recognition feature to extract entities from files
+- Amazon Lookout for Vision is designed for image-based anomaly detection, not text processing.
+- SageMaker is a powerful and flexible ML service, it requires ML expertise to train, deploy, and manage models. Fine-tuning and maintaining a custom NLP model, especially for entity extraction, involves substantial effort and cost.
+- Amazon S3 Transfer Acceleration (Amazon S3TA) enables fast, easy, and secure transfers of files over long distances between your client and an S3 bucket. Transfer Acceleration takes advantage of Amazon CloudFront’s globally distributed edge locations
+- Parallelizing S3 reads using prefixes in bucket -  Your application can achieve at least 3,500 PUT/COPY/POST/DELETE or 5,500 GET/HEAD requests per second per prefix in a bucket. There are no limits to the number of prefixes in a bucket. You can increase your read or write performance by parallelizing reads. For example, if you create 10 prefixes in an Amazon S3 bucket to parallelize reads, you could scale your read performance to 55,000 read requests per second.
+- FSx gateway for on-premises + AWS access
+- S3 trasnfer charges and trasfer Acceleration charges - There are no S3 data transfer charges when data is transferred in from the internet. Also with S3TA, you pay only for transfers that are accelerated. Therefore the junior scientist does not need to pay any transfer charges for the image upload because S3TA did not result in an accelerated transfer.
+- Storage costs of S3 VS EBS VS EFS - 
+	- With Amazon EBS Elastic Volumes, you pay only for the resources that you use. The Amazon EFS Standard Storage pricing is $0.30 per GB per month. Therefore the cost for storing the test file on EFS is $0.30 for the month.
+	- For Amazon EBS General Purpose SSD (gp2) volumes, the charges are $0.10 per GB-month of provisioned storage. Therefore, for a provisioned storage of 100GB for this use-case, the monthly cost on EBS is $0.10*100 = $10. This cost is irrespective of how much storage is actually consumed by the test file.
+	- For S3 Standard storage, the pricing is $0.023 per GB per month. Therefore, the monthly storage cost on S3 for the test file is $0.023.
+- S3 retention policies
+	- When you apply a retention period to an object version explicitly, you specify a Retain Until Date for the object version
+	- You can place a retention period on an object version either explicitly or through a bucket default setting. When you apply a retention period to an object version explicitly, you specify a Retain Until Date for the object version. Amazon S3 stores the Retain Until Date setting in the object version's metadata and protects the object version until the retention period expires.
+	- Different versions of a single object can have different retention modes and periods
+	- Like all other Object Lock settings, retention periods apply to individual object versions. Different versions of a single object can have different retention modes and periods.
+	- For example, suppose that you have an object that is 15 days into a 30-day retention period, and you PUT an object into Amazon S3 with the same name and a 60-day retention period. In this case, your PUT succeeds, and Amazon S3 creates a new version of the object with a 60-day retention period. The older version maintains its original retention period and becomes deletable in 15 days.
