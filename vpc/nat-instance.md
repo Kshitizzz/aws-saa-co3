@@ -62,6 +62,6 @@
 ## 🧠 When to Use
 
 - ✅ Low-traffic, cost-sensitive workloads
-- ✅ Custom routing/firewall logic (e.g., proxy, packet inspection)
+- ✅ Custom routing/firewall logic (e.g., proxy, packet inspection, port forwarding)
 - ❌ Not for production-scale, multi-AZ architectures (use NAT Gateway)
 

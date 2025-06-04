@@ -49,7 +49,7 @@
 
 ### What It Solves  
 - **Cold start latency**, especially for:
-  - VPC-connected Lambdas  
+  - VPC-connected Lambdas [Lambdas are by default public but can be made private, means they will need NATGW to communicate with the Internet] 
   - Heavy runtime functions (e.g., Java, .NET)  
   - APIs with strict SLAs
 
