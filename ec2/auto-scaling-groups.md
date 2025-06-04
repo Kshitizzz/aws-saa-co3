@@ -17,7 +17,7 @@
 |----------------------|-----------------------------------------------------------------------------|
 | **Launch Template**  | ✅ Required; defines instance type, AMI, key pair, SGs, volumes             |
 | **Min/Max/Desired**  | ✅ Minimum, maximum, and starting number of EC2 instances                   |
-| **Scaling Policies** | Rules that trigger scale-out/in based on metrics or schedules              |
+| **Scaling Policies** | Rules that trigger scale-out/in based on metrics or schedules  (scheduled ASG policies, simple and Target tracking policies)            |
 | **Health Checks**    | ✅ Built-in EC2 + optional ELB health checks                                |
 | **Availability Zones** | Distributes EC2s across selected AZs for HA                             |
 | **Instance Refresh** | Roll out config changes without downtime (blue/green-style updates)        |
